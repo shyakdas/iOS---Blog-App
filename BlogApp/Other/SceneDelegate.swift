@@ -16,7 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScheme = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScheme)
         
-        let vc = ViewController()
+        // TODO : Update View Controller to SignIn ViewCOntroller if not signed in
+        let vc = TabBarViewController()
         window.rootViewController = vc
         window.makeKeyAndVisible()
         self.window = window
@@ -33,7 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
     }
-
+  
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
