@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		521D4F83A201FA8909787136 /* Pods_BlogApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F48D22DAFB587724D21756 /* Pods_BlogApp.framework */; };
 		DE6B75542AC35FC00058BBA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE6B75532AC35FBF0058BBA8 /* GoogleService-Info.plist */; };
+		DE6B75562AC3711D0058BBA8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B75552AC3711D0058BBA8 /* User.swift */; };
+		DE6B75582AC371290058BBA8 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B75572AC371290058BBA8 /* BlogPost.swift */; };
 		DEEA5DEB2AC1A64E00B63778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEA5DEA2AC1A64E00B63778 /* AppDelegate.swift */; };
 		DEEA5DED2AC1A64E00B63778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEA5DEC2AC1A64E00B63778 /* SceneDelegate.swift */; };
 		DEEA5DEF2AC1A64E00B63778 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEA5DEE2AC1A64E00B63778 /* HomeViewController.swift */; };
@@ -31,6 +33,8 @@
 		94F01E96FA65D61327E50547 /* Pods-BlogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.release.xcconfig"; path = "Target Support Files/Pods-BlogApp/Pods-BlogApp.release.xcconfig"; sourceTree = "<group>"; };
 		9CFB8769B0CC3F805113F0E5 /* Pods-BlogApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.debug.xcconfig"; path = "Target Support Files/Pods-BlogApp/Pods-BlogApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE6B75532AC35FBF0058BBA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DE6B75552AC3711D0058BBA8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DE6B75572AC371290058BBA8 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		DEEA5DE72AC1A64E00B63778 /* BlogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEA5DEA2AC1A64E00B63778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEEA5DEC2AC1A64E00B63778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 		DEEA5E002AC1AE6400B63778 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DE6B75552AC3711D0058BBA8 /* User.swift */,
+				DE6B75572AC371290058BBA8 /* BlogPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,12 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6B75582AC371290058BBA8 /* BlogPost.swift in Sources */,
 				DEEA5E0D2AC1B1D500B63778 /* ViewPostViewController.swift in Sources */,
 				DEEA5E152AC1B3CA00B63778 /* AuthManager.swift in Sources */,
 				DEEA5E132AC1B39600B63778 /* DatabaseManager.swift in Sources */,
 				DEEA5DEF2AC1A64E00B63778 /* HomeViewController.swift in Sources */,
 				DEEA5E0B2AC1B1A900B63778 /* SignUpViewController.swift in Sources */,
 				DEEA5DEB2AC1A64E00B63778 /* AppDelegate.swift in Sources */,
+				DE6B75562AC3711D0058BBA8 /* User.swift in Sources */,
 				DEEA5E092AC1B19B00B63778 /* SignInViewController.swift in Sources */,
 				DEEA5E0F2AC1B2AD00B63778 /* CreateNewPostViewController.swift in Sources */,
 				DEEA5E112AC1B35C00B63778 /* IAPManager.swift in Sources */,
