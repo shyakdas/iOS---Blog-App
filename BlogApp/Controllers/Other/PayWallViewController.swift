@@ -93,19 +93,21 @@ class PayWallViewController: UIViewController {
     }
      
     @objc private func didTapSubscribe() {
-        // Revenue Cat
+        IAPManager.shared.subscribe() { [weak self] success in
+            self?.dismiss(animated: true, completion: nil)
+        }
     }
     
     @objc private func didTapRestore() {
-        // Revenue Cat
+        IAPManager.shared.restorePurchases() { [weak self] success in
+            self?.dismiss(animated: true, completion: nil)
+        }
     }
     
     private func setUpCloseButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close,
                                                             target: self,
                                                             action: #selector(didTapClose))
-        
-        
     }
     
     @objc private func didTapClose() {

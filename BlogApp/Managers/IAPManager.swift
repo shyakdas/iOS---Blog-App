@@ -6,25 +6,30 @@
 //
 
 import Foundation
-import Purchases
 
 final class IAPManager {
+     
     static let shared = IAPManager()
     
     private init() {}
     
-    func isPremium() -> Bool {
-        return false
+    public func isPremium() -> Bool {
+        return UserDefaults.standard.bool(forKey: "premium")
     }
     
-    func subscribe() {
-        
+    public func getSubscriptionStatus(completion : ((Bool) -> Void)?) {
+        UserDefaults.standard.set(true, forKey: "premium")
+        completion?(true)
     }
     
-    func restorePurchases() {
-        
+    public func subscribe(completion : @escaping (Bool) -> Void) {
+        UserDefaults.standard.set(true, forKey: "premium")
+        completion(true)
     }
     
-    
-    
+    public func restorePurchases(completion : @escaping (Bool) -> Void) {
+        UserDefaults.standard.set(true, forKey: "premium")
+        completion(true)
+    }
 }
+ 

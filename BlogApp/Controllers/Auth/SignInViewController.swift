@@ -15,7 +15,7 @@ class SignInViewController: UITabBarController {
         view.backgroundColor = .systemBackground
         
         
-        DispatchQueue.main.asyncAfter(deadline: .now()+3){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3){
             if !IAPManager.shared.isPremium() {
                 let vc = PayWallViewController()
                 let navVc = UINavigationController(rootViewController: vc)
