@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		521D4F83A201FA8909787136 /* Pods_BlogApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F48D22DAFB587724D21756 /* Pods_BlogApp.framework */; };
+		DE49CE8E2AD7054100C74619 /* SigInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49CE8D2AD7054100C74619 /* SigInHeaderView.swift */; };
 		DE6B75542AC35FC00058BBA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE6B75532AC35FBF0058BBA8 /* GoogleService-Info.plist */; };
 		DE6B75562AC3711D0058BBA8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B75552AC3711D0058BBA8 /* User.swift */; };
 		DE6B75582AC371290058BBA8 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B75572AC371290058BBA8 /* BlogPost.swift */; };
 		DE6B755B2AC448AC0058BBA8 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B755A2AC448AC0058BBA8 /* PayWallViewController.swift */; };
-		DE6B755D2AC450080058BBA8 /* crown.fill.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6B755C2AC450080058BBA8 /* crown.fill.png */; };
 		DE6B755F2AC4543B0058BBA8 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B755E2AC4543B0058BBA8 /* PayWallHeaderView.swift */; };
 		DE6B75612AC456D20058BBA8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B75602AC456D20058BBA8 /* Extensions.swift */; };
 		DE6B75632AC6EC520058BBA8 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B75622AC6EC520058BBA8 /* PayWallDescriptionView.swift */; };
@@ -37,11 +37,11 @@
 		90F48D22DAFB587724D21756 /* Pods_BlogApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlogApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F01E96FA65D61327E50547 /* Pods-BlogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.release.xcconfig"; path = "Target Support Files/Pods-BlogApp/Pods-BlogApp.release.xcconfig"; sourceTree = "<group>"; };
 		9CFB8769B0CC3F805113F0E5 /* Pods-BlogApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.debug.xcconfig"; path = "Target Support Files/Pods-BlogApp/Pods-BlogApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DE49CE8D2AD7054100C74619 /* SigInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInHeaderView.swift; sourceTree = "<group>"; };
 		DE6B75532AC35FBF0058BBA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE6B75552AC3711D0058BBA8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE6B75572AC371290058BBA8 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		DE6B755A2AC448AC0058BBA8 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
-		DE6B755C2AC450080058BBA8 /* crown.fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crown.fill.png; path = ../../../../../Desktop/crown.fill.png; sourceTree = "<group>"; };
 		DE6B755E2AC4543B0058BBA8 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
 		DE6B75602AC456D20058BBA8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DE6B75622AC6EC520058BBA8 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
@@ -139,7 +139,6 @@
 				DE6B75532AC35FBF0058BBA8 /* GoogleService-Info.plist */,
 				DEEA5DEA2AC1A64E00B63778 /* AppDelegate.swift */,
 				DEEA5DF32AC1A64F00B63778 /* Assets.xcassets */,
-				DE6B755C2AC450080058BBA8 /* crown.fill.png */,
 				DEEA5DEC2AC1A64E00B63778 /* SceneDelegate.swift */,
 			);
 			path = Other;
@@ -151,6 +150,7 @@
 				DEEA5DF52AC1A64F00B63778 /* LaunchScreen.storyboard */,
 				DE6B755E2AC4543B0058BBA8 /* PayWallHeaderView.swift */,
 				DE6B75622AC6EC520058BBA8 /* PayWallDescriptionView.swift */,
+				DE49CE8D2AD7054100C74619 /* SigInHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,7 +277,6 @@
 				DEEA5DF72AC1A64F00B63778 /* LaunchScreen.storyboard in Resources */,
 				DEEA5DF42AC1A64F00B63778 /* Assets.xcassets in Resources */,
 				DE6B75542AC35FC00058BBA8 /* GoogleService-Info.plist in Resources */,
-				DE6B755D2AC450080058BBA8 /* crown.fill.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +339,7 @@
 				DE6B755F2AC4543B0058BBA8 /* PayWallHeaderView.swift in Sources */,
 				DEEA5E0B2AC1B1A900B63778 /* SignUpViewController.swift in Sources */,
 				DEEA5DEB2AC1A64E00B63778 /* AppDelegate.swift in Sources */,
+				DE49CE8E2AD7054100C74619 /* SigInHeaderView.swift in Sources */,
 				DE6B75562AC3711D0058BBA8 /* User.swift in Sources */,
 				DEEA5E092AC1B19B00B63778 /* SignInViewController.swift in Sources */,
 				DEEA5E0F2AC1B2AD00B63778 /* CreateNewPostViewController.swift in Sources */,
