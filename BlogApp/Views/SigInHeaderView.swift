@@ -22,7 +22,7 @@ class SigInHeaderView: UIView {
         label.numberOfLines = 0
         label.font = .systemFont(ofSize: 20, weight : .medium)
         label.text = "Explire millions of articles"
-        return label
+        return label    
     }()
 
     override init(frame: CGRect) {
