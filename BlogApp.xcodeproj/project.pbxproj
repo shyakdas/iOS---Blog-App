@@ -126,7 +126,6 @@
 				DEEA5E022AC1AE8600B63778 /* Managers */,
 				DEEA5E012AC1AE7500B63778 /* Controllers */,
 				DEEA5E002AC1AE6400B63778 /* Models */,
-				DEEA5DFF2AC1AE5800B63778 /* Views */,
 				DEEA5DFE2AC1AE4500B63778 /* Other */,
 				DEEA5DF82AC1A64F00B63778 /* Info.plist */,
 			);
@@ -159,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6B75552AC3711D0058BBA8 /* User.swift */,
+				DEEA5DFF2AC1AE5800B63778 /* Views */,
 				DE6B75572AC371290058BBA8 /* BlogPost.swift */,
 			);
 			path = Models;
