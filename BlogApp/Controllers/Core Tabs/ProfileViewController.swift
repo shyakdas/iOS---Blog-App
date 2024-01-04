@@ -66,7 +66,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         headerView.clipsToBounds = true
         tableView.tableHeaderView = headerView
         
-        // Profile Picture
+        
         let profilePhoto = UIImageView(image: UIImage(systemName: "person.circle"))
         profilePhoto.tintColor = .white
         profilePhoto.contentMode = .scaleAspectFit
