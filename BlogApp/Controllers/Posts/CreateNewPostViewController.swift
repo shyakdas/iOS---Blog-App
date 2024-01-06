@@ -50,6 +50,9 @@ class CreateNewPostViewController: UITabBarController {
         view.addSubview(headerImageView)
         view.addSubview(textView)
         view.addSubview(titleField)
+        let tap = UITapGestureRecognizer(target: self,
+                                         action: #selector(didTapHeader))
+        headerImageView.addGestureRecognizer(tap)
         confirgureButtons()
     }
     
@@ -68,6 +71,13 @@ class CreateNewPostViewController: UITabBarController {
                                 y: headerImageView.bottom+10,
                                 width: view.width-20,
                                 height: view.height-210-view.safeAreaInsets.top)
+    }
+    
+    @objc private func didTapHeader(){
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        present(picker, animated: true)
     }
     
     private func confirgureButtons(){
@@ -94,5 +104,22 @@ class CreateNewPostViewController: UITabBarController {
               !body.trimmingCharacters(in: .whitespaces).isEmpty else {
             return
         }
+        
+        let post = BlogPost(indentifier: UUID().uuidString,
+                            title: title,
+                            timestamp: Date().timeIntervalSince1970,
+                            headerImageUrl: nil,
+                            text: body)
+    }
+}
+
+extension CreateNewPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        
     }
 }
