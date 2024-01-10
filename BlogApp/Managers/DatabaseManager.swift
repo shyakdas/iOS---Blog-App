@@ -33,9 +33,10 @@ final class DatabaseManager {
         database.collection("users")
             .document(userEmail)
             .collection("posts")
-            .addDocument(data: data) { error in
+            .document(blogPost.indentifier)
+            .setData(data) { error in
                 completion(error == nil)
-        }
+            }
     }
     
     public func getAllPost(completion: @escaping ([BlogPost]) -> Void)
@@ -44,9 +45,39 @@ final class DatabaseManager {
     }
     
     
-    public func getPosts(user : User,completion: @escaping ([BlogPost]) -> Void)
+    public func getPosts(for email: String, completion: @escaping ([BlogPost]) -> Void)
     {
-         
+        let userEmail = email.replacingOccurrences(of: ".", with: "_")
+                            .replacingOccurrences(of: "@", with: "_")
+        
+        database.collection("users")
+                .document(userEmail)
+                .collection("posts")
+                .getDocuments { snapshot, error in
+                    guard let documents = snapshot?.documents.compactMap({ $0.data() }), error == nil else {
+                        return
+                    }
+                    
+                    let posts : [BlogPost] = documents.compactMap({ dictionary in
+                        guard let id = dictionary["id"] as? String,
+                              let title = dictionary["title"] as? String,
+                              let body = dictionary["body"] as? String,
+                              let created = dictionary["created"] as? TimeInterval,
+                              let imageUrlString = dictionary["headerImageUrl"] as? String else {
+                            print("Invalid post fetch conversion")
+                            return nil
+                        }
+                        
+                        let post = BlogPost(indentifier: id,
+                                            title: title,
+                                            timestamp: created,
+                                            headerImageUrl: URL(string: imageUrlString),
+                                            text: body)
+                        return post
+                    })
+                    
+                    completion(posts)
+                }
     }
     
     public func insert(user : User, completion: @escaping (Bool) -> Void)
