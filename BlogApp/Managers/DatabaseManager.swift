@@ -58,6 +58,8 @@ final class DatabaseManager {
                         return
                     }
                     
+                    print("No of document==\(documents.count)")
+                    
                     let posts : [BlogPost] = documents.compactMap({ dictionary in
                         guard let id = dictionary["id"] as? String,
                               let title = dictionary["title"] as? String,
