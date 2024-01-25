@@ -205,7 +205,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = ViewPostViewController(post: posts[indexPath.row])
-        vc.title = posts[indexPath.row].title
+        vc.title = "Post"
+        vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }
 }
