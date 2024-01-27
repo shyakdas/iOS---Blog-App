@@ -11,6 +11,10 @@ final class IAPManager {
      
     static let shared = IAPManager()
     
+    private var postEligibeViewDate : Date?
+    
+    private var name : String?
+    
     private init() {}
     
     public func isPremium() -> Bool {
@@ -33,3 +37,27 @@ final class IAPManager {
     }
 }
  
+extension IAPManager {
+    
+    var canViewPost : Bool {
+        if isPremium() {
+            return true
+        }
+        guard let date = postEligibeViewDate else {
+            return true
+        }
+        UserDefaults.standard.set(0, forKey: "post_views")
+        return Date() >= date
+    }
+    
+    public func logPostView() {
+        let total = UserDefaults.standard.integer(forKey: "post_views")
+        print("total==\(total)")
+        UserDefaults.standard.set(total + 1, forKey: "post_views")
+            
+        if total == 2 {
+            let hour : TimeInterval = 60 * 60
+            postEligibeViewDate = Date().addingTimeInterval(hour * 24)
+        }
+    }
+}
