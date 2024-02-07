@@ -81,6 +81,7 @@ class CreateNewPostViewController: UITabBarController {
         present(picker, animated: true)
     }
     
+    // Adding my comment here to understand
     private func confirgureButtons(){
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel",
                                                            style: .done,
@@ -99,7 +100,7 @@ class CreateNewPostViewController: UITabBarController {
     
     @objc private func didTapPost() {
            // Check data and post
-           guard let title = titleField.text,
+        guard let title = titleField.text,
                  let body = textView.text,
                  let headerImage = selectHeaderImage,
                  let email = UserDefaults.standard.string(forKey: "email"),

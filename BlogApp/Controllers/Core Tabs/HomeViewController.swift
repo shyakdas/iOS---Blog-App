@@ -29,7 +29,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return tabletView
     }()
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear")
+    }
+    
     override func viewDidLoad() {
+        print("viewDidLoad called")
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
@@ -41,6 +46,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func viewDidLayoutSubviews() {
+        print("viewDidLayoutSubviews called")
         super.viewDidLayoutSubviews()
         composeButton.frame = CGRect(x: view.frame.width - 88,
                                      y: view.frame.height - 88 - view.safeAreaInsets.bottom,

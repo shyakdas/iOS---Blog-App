@@ -158,6 +158,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     DispatchQueue.main.async {
                         UserDefaults.standard.set(nil, forKey: "email")
                         UserDefaults.standard.set(nil, forKey: "name")
+                        UserDefaults.standard.set(nil, forKey: "premium")
                         let signInVc = SignInViewController()
                         signInVc.navigationItem.largeTitleDisplayMode = .always
                         
