@@ -1,0 +1,32 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macOS-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up Xcode
+        uses: actions/setup-xcode@v2
+        with:
+          xcode-version: '13.2' # Replace with the desired Xcode version
+
+      - name: Install Dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies
+
+      - name: Build and Test
+        run: |
+          xcodebuild \
+            -workspace YourApp.xcworkspace \
+            -scheme YourApp \
+            -destination 'platform=iOS Simulator,name=iPhone 12' \
+            build test
+
