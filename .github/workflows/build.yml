@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: macos-latest
 
     steps:
       - name: Checkout Repository
@@ -25,8 +25,7 @@ jobs:
       - name: Build and Test
         run: |
           xcodebuild \
-            -workspace YourApp.xcworkspace \
-            -scheme YourApp \
+            -workspace BlogApp.xcworkspace \
+            -scheme BlogApp \
             -destination 'platform=iOS Simulator,name=iPhone 12' \
             build test
-
