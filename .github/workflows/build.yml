@@ -13,8 +13,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set Up Xcode
-        uses: actions/setup-xcode@v3
+      - name: Setup Xcode environment
+        uses: sinoru/actions-setup-xcode@v2.0.2
         with:
           xcode-version: '13.2' # Replace with the desired Xcode version
 
