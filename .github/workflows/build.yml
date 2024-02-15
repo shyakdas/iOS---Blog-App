@@ -25,7 +25,7 @@ jobs:
       - name: Build and Test
         run: |
           xcodebuild \
-            -workspace YourApp.xcworkspace \
-            -scheme YourApp \
+            -workspace BlogApp.xcworkspace \
+            -scheme BlogApp \
             -destination 'platform=iOS Simulator,name=iPhone 12' \
             build test
