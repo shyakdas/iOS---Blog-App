@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		521D4F83A201FA8909787136 /* Pods_BlogApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F48D22DAFB587724D21756 /* Pods_BlogApp.framework */; };
 		DE49CE8E2AD7054100C74619 /* SigInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49CE8D2AD7054100C74619 /* SigInHeaderView.swift */; };
-		DE6B75542AC35FC00058BBA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE6B75532AC35FBF0058BBA8 /* GoogleService-Info.plist */; };
 		DE6B75562AC3711D0058BBA8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B75552AC3711D0058BBA8 /* User.swift */; };
 		DE6B75582AC371290058BBA8 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B75572AC371290058BBA8 /* BlogPost.swift */; };
 		DE6B755B2AC448AC0058BBA8 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B755A2AC448AC0058BBA8 /* PayWallViewController.swift */; };
@@ -40,13 +39,13 @@
 		94F01E96FA65D61327E50547 /* Pods-BlogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.release.xcconfig"; path = "Target Support Files/Pods-BlogApp/Pods-BlogApp.release.xcconfig"; sourceTree = "<group>"; };
 		9CFB8769B0CC3F805113F0E5 /* Pods-BlogApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.debug.xcconfig"; path = "Target Support Files/Pods-BlogApp/Pods-BlogApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE49CE8D2AD7054100C74619 /* SigInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInHeaderView.swift; sourceTree = "<group>"; };
-		DE6B75532AC35FBF0058BBA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE6B75552AC3711D0058BBA8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE6B75572AC371290058BBA8 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		DE6B755A2AC448AC0058BBA8 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
 		DE6B755E2AC4543B0058BBA8 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
 		DE6B75602AC456D20058BBA8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DE6B75622AC6EC520058BBA8 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
+		DE7E8DF82B7EA1F800A57214 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEC659452B517FF400C2A800 /* PostPreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewTableViewCell.swift; sourceTree = "<group>"; };
 		DEC659472B51802300C2A800 /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		DEEA5DE72AC1A64E00B63778 /* BlogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +135,7 @@
 		DEEA5DE92AC1A64E00B63778 /* BlogApp */ = {
 			isa = PBXGroup;
 			children = (
+				DE7E8DF82B7EA1F800A57214 /* GoogleService-Info.plist */,
 				DEEA5E022AC1AE8600B63778 /* Managers */,
 				DEEA5E012AC1AE7500B63778 /* Controllers */,
 				DEEA5E002AC1AE6400B63778 /* Models */,
@@ -148,7 +148,6 @@
 		DEEA5DFE2AC1AE4500B63778 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				DE6B75532AC35FBF0058BBA8 /* GoogleService-Info.plist */,
 				DEEA5DEA2AC1A64E00B63778 /* AppDelegate.swift */,
 				DEEA5DF32AC1A64F00B63778 /* Assets.xcassets */,
 				DEEA5DEC2AC1A64E00B63778 /* SceneDelegate.swift */,
@@ -290,7 +289,6 @@
 			files = (
 				DEEA5DF72AC1A64F00B63778 /* LaunchScreen.storyboard in Resources */,
 				DEEA5DF42AC1A64F00B63778 /* Assets.xcassets in Resources */,
-				DE6B75542AC35FC00058BBA8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
