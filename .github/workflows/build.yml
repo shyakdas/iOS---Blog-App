@@ -15,8 +15,6 @@ jobs:
 
       - name: Set Up Xcode
         uses: actions/setup-xcode@v2
-        with:
-          xcode-version: '13.2' # Replace with the desired Xcode version
 
       - name: Install Dependencies
         run: |
