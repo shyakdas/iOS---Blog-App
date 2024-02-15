@@ -66,7 +66,7 @@ Browse through other users' blogs for inspiration.
 Share your thoughts with the community by publishing your blog post.
 
 ## Contributing
-e welcome contributions to improve the iOS Blog App. To contribute, follow these steps:
+We welcome contributions to improve the iOS Blog App. To contribute, follow these steps:
 
 Fork the repository.
 Create a new branch: git checkout -b feature/new-feature.
