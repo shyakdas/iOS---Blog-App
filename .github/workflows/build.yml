@@ -24,7 +24,7 @@ jobs:
             ${{ runner.os }}-pod-
 
       - name: Set Up Xcode
-        uses: maxim-lobanov/setup-xcode@v1
+        uses: actions/setup-xcode@v2
         with:
           xcode-version: latest-stable
 
@@ -34,9 +34,9 @@ jobs:
 
       - name: Build
         run: xcodebuild -workspace BlogApp.xcworkspace -scheme BlogApp -destination 'platform=iOS Simulator,name=iPhone 12' build
-        
-     - name: Upload Build Artifact
-       uses: actions/upload-artifact@v2
-       with:
-        name: BlogApp-Build
-        path: Build
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: BlogApp-Build
+          path: Build
