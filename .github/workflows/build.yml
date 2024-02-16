@@ -34,7 +34,7 @@ jobs:
 
       - name: Build
         run: xcodebuild \
-             -workspace BlogApp.xcworkspace /
+             -workspace BlogApp.xcworkspace \
              -scheme BlogApp -destination 'platform=iOS Simulator,name=iPhone 12' \
              build
              
