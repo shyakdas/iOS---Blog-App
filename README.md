@@ -83,7 +83,7 @@ This project is set up with GitHub Actions for CI/CD. Here's how it works:
 
 4. Download the desired build artifact for testing or distribution.
 
-## Uploading to TestFlight
+### Uploading to TestFlight
 
 To upload the iOS app to TestFlight for beta testing, follow these steps:
 
