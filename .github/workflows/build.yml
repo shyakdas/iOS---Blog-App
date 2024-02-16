@@ -34,3 +34,9 @@ jobs:
 
       - name: Build
         run: xcodebuild -workspace BlogApp.xcworkspace -scheme BlogApp -destination 'platform=iOS Simulator,name=iPhone 12' build
+        
+     - name: Upload Build Artifact
+       uses: actions/upload-artifact@v2
+       with:
+        name: BlogApp-Build
+        path: Build
